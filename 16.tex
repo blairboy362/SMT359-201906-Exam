@@ -1,0 +1,53 @@
+shrug
+\subsection{}
+Given:
+\begin{equation*}
+    c = \frac{\omega}{k}; k = \frac{\omega}{c}; \omega = 2 \pi f
+\end{equation*}
+The phase of the wave at $ r = \SI{2}{\metre} $ and $ t = 0 $ is:
+\begin{align*}
+    kr - \del{\omega \times 0} & = \frac{2 \pi fr}{c}\\
+    & = \frac{2 \times \pi \times \SI{2e9}{\hertz} \times \SI{2}{\metre}}{\SI{3e8}{\metre\second\tothe{-1}}}\\
+    & = \frac{80}{3} \pi = 84 \textrm{ (to 2 s.f.)}
+\end{align*}
+
+\subsection{}
+shrug
+
+Spatially the wave is only dependant on the r coordinate so for a given instant of fixed r (of fixed phase in an instant of time) the wave front sweeps out a sphere centred on the origin (the dipole).
+
+\subsection{}
+Using Faraday's law:
+\begin{align*}
+    \curl{\mathbf{E}} & = - \dpd{\mathbf{B}}{t}\\
+    \curl{\mathbf{E}} & = \del{0 - 0}\mathbf{e}_r + \del{0 - 0}\mathbf{e}_{\theta} + \frac{1}{r}\del{\dpd{}{r} \del{E_0 \sin{\theta}\sin{\del{kr - \omega t}}} - 0}\mathbf{e}_{\phi}\\
+    & = k E_0 \frac{\sin{\theta}}{r} \cos{\del{kr - \omega t}}\mathbf{e}_{\phi}\\
+    - \mathbf{B} & = \int k E_0 \frac{\sin{\theta}}{r} \cos{\del{kr - \omega t}}\mathbf{e}_{\phi} \dif t\\
+    & = - \frac{k E_0}{\omega} \frac{\sin{\theta}}{r} \sin{\del{kr - \omega t}} \mathbf{e}_{\phi}\\
+    \mathbf{B} & = \frac{k E_0}{\omega} \frac{\sin{\theta}}{r} \sin{\del{kr - \omega t}} \mathbf{e}_{\phi}
+\end{align*}
+Which is consistent with $ \mathbf{E} $ and gives:
+\begin{align*}
+    B_0 & = \frac{k E_0}{\omega}\\
+    E_0 & = \frac{B_0 \omega}{k}
+\end{align*}
+
+\subsection{}
+The total power, $ P $, over an area, $ A $ is given by:
+\begin{equation*}
+    P = \overline{\mathbf{N}} \times A
+\end{equation*}
+Where $ \overline{\mathbf{N}} $ is the time-averaged Poynting vector.
+\begin{align*}
+    \mathbf{N} & = \mathbf{E}_{\textrm{phys}} \times \mathbf{H}_{\textrm{phys}}\\
+    \mathbf{B} & = \mu \mu_0 \mathbf{H}\\
+    \mu & = 1\\
+    A & = 4 \pi r^2 \\
+    \mathbf{N} & = E_0 \frac{\sin{\theta}}{r} \sin{\del{kr - \omega t}}\frac{B_0}{\mu_0} \frac{\sin{\theta}}{r} \sin{\del{kr - \omega t}} \del{\mathbf{e}_{\theta} \times \mathbf{e}_{\phi}}\\
+    & = \frac{E_0 B_0 \sin^2{\theta}}{\mu_0 r^2} \sin^2{\del{kr - \omega t}}\mathbf{e}_r\\
+    \overline{\mathbf{N}} & = \frac{E_0 B_0 \sin^2{\theta}}{\mu_0 r^2} \expectationvalue{\sin^2{\del{kr - \omega t}}}\mathbf{e}_r\\
+    & = \frac{E_0 B_0 \sin^2{\theta}}{2 \mu_0 r^2} \mathbf{e}_r\\
+    P & = \frac{E_0 B_0 \sin^2{\theta}}{2 \mu_0 r^2} \mathbf{e}_r \times 4 \pi r^2\\
+    & = \frac{2 \pi E_0 B_0 \sin^2{\theta}}{\mu_0}\mathbf{e}_r
+\end{align*}
+Which is independent of radial distance, $ r $.

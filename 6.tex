@@ -1,0 +1,18 @@
+\subsection{}
+As there are no surface currents:
+\begin{align*}
+    H_{1\parallel} & = H_{2\parallel} & B_{1\bot} & = B_{2\bot}
+\end{align*}
+
+\subsection{}
+We're dealing with an LIH dielectric so:
+\begin{align*}
+    \mathbf{B} & = \mu \mu_0 \mathbf{H}\\
+    H_1 \sin{\theta_1} & = H_2 \sin{\theta_2} & B_1 \cos{\theta_1} & = B_2 \cos{\theta_2}\\
+    \frac{B_1}{\mu_1 \mu_0}\sin{\theta_1} & = \frac{B_2}{\mu_2 \mu_0}\sin{\theta_2} & B_2 & = \frac{B_1 \cos{\theta_1}}{\cos{\theta_2}}\\
+    \mu_2 & = \frac{\mu_1 B_2 \sin{\theta_2}}{B_1 \sin{\theta_1}}\\
+    & = \frac{\mu_1 \frac{B_1 \cos{\theta_1}}{\cos{\theta_2}} \sin{\theta_2}}{B_1 \sin{\theta_1}}\\
+    & = \frac{\mu_1 \tan{\theta_2}}{\tan{\theta_1}}\\
+    & = \frac{\mu_1 \tan{\SI{25}{\degree}}}{\tan{\SI{15}{\degree}}}\\
+    & = 1.74 \mu_1 \textrm{ (to 3 s.f.)}
+\end{align*}
