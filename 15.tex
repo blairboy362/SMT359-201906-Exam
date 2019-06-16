@@ -1,0 +1,38 @@
+\subsection{}
+\begin{align*}
+    \curl{\mathbf{E}} & = - \dpd{\mathbf{B}}{t}\\
+    \curl{\del{\curl{\mathbf{E}}}} & = - \dpd{}{t} \del{\curl{\mathbf{B}}} & \textrm{curl both sides}\\
+    \curl{\del{\curl{\mathbf{E}}}} & = - \varepsilon_0 \mu_0 \dpd[2]{\mathbf{E}}{t} & \textrm{From Ampere-Maxwell: $ \curl{\mathbf{B}} = \varepsilon_0 \mu_0 \dpd{\mathbf{E}}{t} $}\\
+    \grad{\del{\div{\mathbf{E}}}} - \laplacian{\mathbf{E}} & = - \varepsilon_0 \mu_0 \dpd[2]{\mathbf{E}}{t} & \textrm{From: $ \curl{\del{\curl{\mathbf{F}}}} = \grad{\del{\div{\mathbf{F}}}} - \laplacian{\mathbf{F}} $}\\
+    - \laplacian{\mathbf{E}} & = - \varepsilon_0 \mu_0 \dpd[2]{\mathbf{E}}{t} & \textrm{From Gauss' law: $ \div{\mathbf{E}} = 0 $ in empty space}\\
+    \laplacian{\mathbf{E}} & = \varepsilon_0 \mu_0 \dpd[2]{\mathbf{E}}{t}
+\end{align*}
+Which is the wave equation.
+
+\subsection{}
+From Faraday's law:
+\begin{align*}
+    \curl{\mathbf{E}} & = - \dpd{\mathbf{B}}{t}\\
+    \curl{\mathbf{E}} & = \del{\operatorname{i}k E_0 \operatorname{exp}{\sbr{\operatorname{i}\del{ky - \omega t}}} - 0}\mathbf{e}_x + \del{0 - 0} \mathbf{e}_y + \del{0 - 0} \mathbf{e}_z\\
+    & = \operatorname{i}k E_0 \operatorname{exp}{\sbr{\operatorname{i}\del{ky - \omega t}}} \mathbf{e}_x\\
+    - \mathbf{B} & = \int \operatorname{i}k E_0 \operatorname{exp}{\sbr{\operatorname{i}\del{ky - \omega t}}} \mathbf{e}_x \dif t\\
+    & = - \frac{k E_0}{\omega} \operatorname{exp}{\sbr{\operatorname{i}\del{ky - \omega t}}} \mathbf{e}_x\\
+    \mathbf{B} & = \frac{E_0}{c} \operatorname{exp}{\sbr{\operatorname{i}\del{ky - \omega t}}} \mathbf{e}_x\\
+    & = B_0 \operatorname{exp}{\sbr{\operatorname{i}\del{ky - \omega t}}} \mathbf{e}_x \textrm{ where $ B_0 = \tfrac{1}{c} E_0 $}
+\end{align*}
+
+\subsection{}
+\begin{align*}
+    \mathbf{N} & = \mathbf{E}_{\textrm{phys}} \times \mathbf{H}_{\textrm{phys}}\\
+    \mathbf{B} & = \mu \mu_0 \mathbf{H}\\
+    \mu & = 1\\
+    E_0 & = c B_0\\
+    \mathbf{N} & = E_0 \cos{\del{ky - \omega t}} \frac{B_0}{\mu \mu_0} \cos{\del{ky - \omega t}} \del{\mathbf{e}_z \times \mathbf{e}_x}\\
+    & = \frac{c B_0^2}{\mu_0} \cos^2{\del{ky - \omega t}} \mathbf{e}_y\\
+    \overline{\mathbf{N}} & = \frac{c B_0^2}{\mu_0} \expectationvalue{\cos^2{\del{ky - \omega t}}} \mathbf{e}_y\\
+    & = \frac{c B_0^2}{2 \mu_0} \mathbf{e}_y\\
+    & = \frac{\del{\SI{1e-13}{\tesla}}^2 \times \SI{3e8}{\metre\second\tothe{-1}}}{2 \times 4 \times \pi \times 10^{-7} \si{\newton\ampere\tothe{-2}}} \mathbf{e}_y\\
+    & = \SI{1.2e-12}{\watt\metre\tothe{-2}} \mathbf{e}_y
+\end{align*}
+shrug
+

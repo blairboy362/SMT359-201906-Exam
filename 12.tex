@@ -1,0 +1,49 @@
+\subsection{}
+They represent static fields if their curl is zero.
+
+\begin{align*}
+    \curl{\mathbf{E}_1} & = \del{0 - 0}\mathbf{e}_r + \del{0 - 0}\mathbf{e}_{\phi} + \del{0 - 0}\mathbf{e}_z\\
+    & = \mathbf{0}\\
+    \curl{\mathbf{E}_2} & = \del{0 - 0}\mathbf{e}_r + \del{0 - 0}\mathbf{e}_{\phi} + \del{0 - 0}\mathbf{e}_z\\
+    & = \mathbf{0}
+\end{align*}
+
+\subsection{}
+\subsubsection{}
+From the differential version of Gauss' law:
+\begin{align*}
+    \rho & = \varepsilon_0 \div{\mathbf{E}_1}\\
+    & = \varepsilon_0 \del{\frac{1}{r} \del{\dpd{}{r} \frac{Cr^2}{a}}}\\
+    & = \varepsilon_0 \del{\frac{1}{r} \del{\frac{2Cr}{a}}}\\
+    & = \frac{2C \varepsilon_0}{a}
+\end{align*}
+
+\subsubsection{}
+\begin{align*}
+    \rho & = \varepsilon_0 \div{\mathbf{E}_2}\\
+    & = \varepsilon_0 \del{\frac{1}{r} \del{\dpd{}{r} K}}\\
+    & = 0
+\end{align*}
+
+\subsection{}
+Assuming at $ r = a $, $ \mathbf{E}_1 = \mathbf{E}_2 $:
+\begin{align*}
+    \frac{Ca}{a} & = \frac{K}{a}\\
+    K & = Ca
+\end{align*}
+
+\subsection{}
+Assumptions:
+\begin{itemize}
+    \item q is positive
+    \item zero of potential is at $ r = \infty $
+\end{itemize}
+
+\begin{align*}
+    W & = q \del{V \del{r = R} - V \del{r = 0}}\\
+    & = q \del{- \int_0^a \mathbf{E}_1 \cdot \dif \mathbf{l} - \int_a^R \mathbf{E}_2 \cdot \dif \mathbf{l}}\\
+    & = q \del{- \frac{C}{a} \int_0^a r \dif r - K \int_a^R \frac{1}{r} \dif r}\\
+    & = q \del{- \frac{C}{a} \sbr{\tfrac{1}{2}r^2}_0^a - K \sbr{\ln{r}}_a^R}\\
+    & = q \del{- \frac{Ca}{2} - K \ln{\del{\frac{R}{a}}}}
+\end{align*}
+shrug

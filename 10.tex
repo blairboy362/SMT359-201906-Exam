@@ -1,0 +1,16 @@
+\subsection{}
+Anticlockwise.
+
+\subsection{}
+Assume ohmic materials so:
+\begin{equation*}
+    I = \frac{V}{R}
+\end{equation*}
+Faraday's law:
+\begin{align*}
+    V_{\textrm{emf}} & = - \dod{}{t} \int_S \mathbf{B} \cdot \dif \mathbf{S}\\
+    \abs{V_{\textrm{emf}}} & = \dod{}{t} B\del{t} \times \pi r^2\\
+    \dod{B}{t} & = \frac{\SI{6.0e-3}{\tesla} - \SI{3.0e-3}{\tesla}}{\SI{2}{\second}} = \SI{1.5e-3}{\tesla\second\tothe{-1}}\\
+    I & = \frac{\SI{1.5e-3}{\tesla\second\tothe{-1}} \times \pi \times \del{\SI{15e-2}{\metre}}^2}{\SI{5.0e-3}{\ohm}}\\
+    & = \SI{21}{\milli\ampere} \textrm{ (to 2 s.f.)}
+\end{align*}

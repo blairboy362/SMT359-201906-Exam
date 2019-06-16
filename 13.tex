@@ -1,0 +1,44 @@
+\subsection{}
+Biot–Savart is given by:
+\begin{equation*}
+    \delta \mathbf{B} = \frac{\mu_0}{4 \pi} \frac{I \delta \mathbf{l} \times \del{\mathbf{r} - \mathbf{r}_0}}{\abs{\mathbf{r} - \mathbf{r}_0}^3}
+\end{equation*}
+
+\begin{itemize}
+    \item $ \delta \mathbf{B} $ can be split into a component parallel to the wire and a component perpendicular to the wire.
+    \item Around the whole loop the perpendicular components cancel.
+    \item Around the whole loop the parallel components sum together.
+    \item $ \abs{\mathbf{r} - \mathbf{r}_0} = \sqrt{R^2 + z^2} $
+    \item Parallel component is $ I \delta \mathbf{l} \sqrt{R^2 + z^2} \cos{\theta} $.
+    \item $ \cos{\theta} = \frac{R}{\sqrt{R^2 + z^2}} $.
+    \item Around the whole loop $ I \delta \mathbf{l} = 2 \pi I R $
+\end{itemize}
+Hence:
+\begin{align*}
+    \mathbf{B} & = \frac{\mu_0}{4 \pi} \frac{2 \pi I R \sqrt{R^2 + z^2} \cos{\theta}}{\del{R^2 + z^2}^{3/2}} \mathbf{e}_z\\
+    & = \frac{\mu_0}{2} \frac{IR^2}{\del{R^2 + z^2}^{3/2}} \mathbf{e}_z
+\end{align*}
+As required.
+
+\subsection{}
+shrug
+
+\subsubsection{}
+shrug
+
+\subsubsection{}
+\begin{align*}
+    \mathbf{B}_{\textrm{sol}} & = n_1 l \int_{-\infty}^{\infty} \frac{\mu_0}{2} \frac{IR^2}{\del{R^2 + z^2}^{3/2}} \mathbf{e}_z \dif z\\
+    & = \frac{\mu_0 I n_1 l}{2} \int_{-\infty}^{\infty} \frac{R^2}{\del{R^2 + z^2}^{3/2}}\\
+    & = \mu_0 I n_1 l
+\end{align*}
+shrug
+
+\subsection{}
+\begin{align*}
+    \Phi_{21} & = \int_S \mathbf{B} \cdot \dif \mathbf{S} = B_1 \pi 4 R^2 n_2 l\\
+    B_1 & = \mu_0 I n_1 l \pi R^2\\
+    \Phi_{21} & = 4 \pi^2 \mu_0 I n_1 n_2 R^4 l^2\\
+    M_{21} & = \dod{\Phi_{21}}{I_1} = 4 \pi^2 \mu_0 n_1 n_2 R^4 l^2
+\end{align*}
+shrug

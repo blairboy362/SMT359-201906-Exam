@@ -1,0 +1,36 @@
+shrug
+\subsection{}
+\subsubsection{}
+No time-varying electric field so the Ampere-Maxwell law is:
+\begin{align*}
+    \oint_C \mathbf{H} \cdot \dif \mathbf{l} & = \int_S \mathbf{J}_{\textrm{f}} \cdot \dif \mathbf{S} = I_{\textrm{enclosed}} = I \frac{\pi r^2}{\pi a^2}\\
+    \frac{B_{\phi} \del{r}}{\mu \mu_0} \times 2 \pi r & = I \frac{r^2}{a^2}\\
+    \mathbf{B} & = \frac{\mu_0 I r}{2 \pi a^2} \mathbf{e}_{\phi} & r \leq a
+\end{align*}
+
+\subsubsection{}
+\begin{align*}
+    \oint_C \mathbf{H} \cdot \dif \mathbf{l} & = \int_S \mathbf{J}_{\textrm{f}} \cdot \dif \mathbf{S} = I_{\textrm{enclosed}} = I\\
+    \frac{B_{\phi} \del{r}}{\mu \mu_0} \times 2 \pi r & = I\\
+    \mathbf{B} & = \frac{\mu_0 I}{2 \pi r} \mathbf{e}_{\phi} & r > a
+\end{align*}
+
+\subsection{}
+Given $ \abs{\mathbf{E}} = 0 $ the Lorentz force law gives:
+\begin{align*}
+    \mathbf{F} & = q \del{\mathbf{E} + \mathbf{v} \times \mathbf{B}}\\
+    & = -e \del{\mathbf{v} \times \mathbf{b}}\\
+    & = -evB \del{\mathbf{e}_z \times \mathbf{e}_{\phi}}\\
+    & = -evB \del{- \mathbf{e}_r}\\
+    & = evB \mathbf{e}_r\\
+    & = \frac{\mu_0 e I v}{2 \pi b}\mathbf{e}_r
+\end{align*}
+
+\subsection{}
+\begin{align*}
+    \delta \mathbf{F} & = I \delta \mathbf{l} \times \mathbf{B}\\
+    \frac{\delta \mathbf{F}}{\delta l} & = 3I \del{- \mathbf{e}_z} \times B \mathbf{e}_{\phi}\\
+    & = 3IB \del{\del{- \mathbf{e}_z} \times \mathbf{e}_{\phi}}\\
+    & = 3IB \mathbf{e}_r\\
+    & = \frac{3 \mu_0 I^2}{2 \pi d} \mathbf{e}_r
+\end{align*}
